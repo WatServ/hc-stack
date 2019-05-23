@@ -34,7 +34,7 @@ resource "azurerm_virtual_machine" "main" {
       path = "/home/hcadmin/.ssh/authorized_keys"
 
       # key_data = "${file(".ssh/hcadmin_rsa.pub")}"
-      key_data = "${var.hcadmin_rsa}"
+      # key_data = "${var.hcadmin_rsa}"
     }
   }
 
