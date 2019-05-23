@@ -30,12 +30,12 @@ resource "azurerm_virtual_machine" "main" {
   os_profile_linux_config {
     disable_password_authentication = true
 
-    ssh_keys {
-      path = "/home/hcadmin/.ssh/authorized_keys"
+    # ssh_keys {
+      # path = "/home/hcadmin/.ssh/authorized_keys"
 
       # key_data = "${file(".ssh/hcadmin_rsa.pub")}"
       # key_data = "${var.hcadmin_rsa}"
-    }
+    # }
   }
 
   tags = "${var.tags}"
