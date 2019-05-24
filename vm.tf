@@ -1,7 +1,7 @@
 ######### ######### ######### ######### ######### ######### ######### #########
 
 resource "azurerm_virtual_machine" "main" {
-  count                 = 1                                         # create four similar vms
+  count                 = 2                                         # create four similar vms
   name                  = "${var.prefix}-vm${count.index}"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
